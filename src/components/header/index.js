@@ -1,19 +1,17 @@
 import React from 'react';
 import './styles.scss';
-import Logo from './../../assets/graphics/logo.png'
+import Logo from './../../assets/graphics/logo.png';
 
 const Header = (props) => {
     return (
-        <header>
+        <header className="headerComponent">
             <div className="wrap">
                 <div className="logo">
-                    <img src={ Logo } alt="Logo" />
-                </div>   
-
+                    <img className="logoIMG" src={Logo} alt="Logo" />
+                </div>
             </div>
-            
         </header>
     )
 };
 
-export default Header
+export default Header;
