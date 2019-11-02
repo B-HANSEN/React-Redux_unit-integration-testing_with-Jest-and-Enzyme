@@ -15,7 +15,7 @@ const setUp = (props= {}) => {
 };
 
 // (2) consolidate find()-methods for each test attribute
-// import from utils to enable functions sharing to other test files
+// import from utils to enable function's sharing to other test files
 
 
 describe('Header Component', () => {
