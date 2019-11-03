@@ -11,7 +11,7 @@ const setUp = (initialState={}) => {
     // to access child component from Provider, add the childAt(0)-method:
     // use dive()-method to render contents of the component:
     const wrapper = shallow(<App store={store} />).childAt(0).dive();
-    console.log(wrapper.debug());
+    // console.log(wrapper.debug());
     return wrapper;
 }
 
