@@ -37,5 +37,24 @@ describe('App Component', () => {
     it('should render without errors', () => {
         const component = findByTestAttr(wrapper, 'appComponent')
         expect(component.length).toBe(1);
-    })
+    });
+
+
+// always 2 scenarios to test methods:
+// (1) updates the state
+// (2) returns a value or a new piece of state
+
+    it('exampleMethod_updateState Method should update state as expected', () => {
+// create instance of the class:
+        const classInstance = wrapper.instance();
+        classInstance.exampleMethod_updateState();
+        const newState = classInstance.state.hideBtn;
+        expect(newState).toBe(true);
+    });
+
+    it('exampleMethod_returnsAValue should return value as expected', () => {
+        const classInstance = wrapper.instance();
+        const newValue = classInstance.exampleMethod_returnsAValue(6);
+        expect(newValue).toBe(7);
+    });
 });
