@@ -14,6 +14,7 @@ describe('Headline Component', () => {
 
     it('should throw a warning', () => {
 
+// testing prop types:
         const expectedProps = {
             header: 'Test Header',
             desc: 'Test Desc',
@@ -75,4 +76,3 @@ describe('Headline Component', () => {
 
     });
 });
-

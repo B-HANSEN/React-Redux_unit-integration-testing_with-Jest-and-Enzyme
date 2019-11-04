@@ -5,7 +5,7 @@ import ListItem from './index';
 
 describe('ListItem Component', () => {
 
-    describe('checking PopTypes', () => {
+    describe('checking PropTypes', () => {
 
         it('should NOT throw a warning', () => {
             const expectedProps = {
@@ -30,7 +30,7 @@ describe('ListItem Component', () => {
             wrapper = shallow(<ListItem {...props} /> );
         });
 
-// write all test first to let them fail
+// write all tests first to let them fail
 // then setup data-test classes in component to let them pass
 
         it('should render without error', () => {

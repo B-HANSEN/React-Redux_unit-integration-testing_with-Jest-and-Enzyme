@@ -38,7 +38,7 @@ class App extends Component {
     this.exampleMethod_updateState();
   };
 
-// testing methods
+// testing methods: (1) revise state, (2) return a value
   exampleMethod_updateState() {
     const { hideBtn } = this.state;
     this.setState({

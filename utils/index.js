@@ -19,6 +19,6 @@ export const checkProps = (component, expectedProps) => {
 // action creator to dispatch the action,
 // store getting updated correctly (use testStore)
 export const testStore = (initialState) => {
-    const createStorewithMiddleware = applyMiddleware(...middlewares)(createStore)
-    return createStorewithMiddleware(rootReducer, initialState);
+    const createStoreWithMiddleware = applyMiddleware(...middlewares)(createStore)
+    return createStoreWithMiddleware(rootReducer, initialState);
 };

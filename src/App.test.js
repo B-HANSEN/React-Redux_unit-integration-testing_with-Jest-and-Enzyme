@@ -1,8 +1,7 @@
 import React from 'react';
 import App from './App';
 import { shallow } from 'enzyme';
-import { findByTestAttr, testStore} from './../utils';
-import { isTSAnyKeyword } from '@babel/types';
+import { findByTestAttr, testStore } from './../utils';
 
 
 const setUp = (initialState={}) => {

@@ -3,16 +3,17 @@ import  { findByTestAttr, checkProps } from './../../../utils';
 import SharedButton from './index';
 import { shallow } from 'enzyme';
 
+
 describe('SharedButton Component', () => {
 
+// testing prop types:
     describe('Checking PropTypes', () => {
         it('should NOT throw a warning', () => {
             const expectedProps = {
                 buttonText: 'Example Button Text',
 
-// test passing a string before passing a function:
+// test passing a string 'test', before passing a function '()=>{}':
                 emitEvent: () => {
-                    
                 }
             };
             const propsError = checkProps(SharedButton, expectedProps);

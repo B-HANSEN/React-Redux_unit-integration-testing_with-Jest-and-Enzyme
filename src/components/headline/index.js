@@ -22,7 +22,7 @@ class Headline extends Component {
             </div>
         )
     }
-}
+};
 
 Headline.propTypes = {
     header: PropTypes.string,
